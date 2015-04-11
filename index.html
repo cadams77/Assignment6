@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 6</title>
+    
+    <link rel="stylesheet" type="text/css" href="styles\Assignment6.css" />
+    
+    <script src=js/Assignment6.js></script>
+    
+</head>
+
+<body>
+
+<section id="title">
+
+<h1>Cole Adams Assignment 6</h1>    
+    
+<hr>
+    
+<select onchange="MenuChoice()" id="menu">
+    
+    <option>Please select an option</option>
+    
+    <option>Show Area 1</option>
+    
+    <option>Show Area 2</option>
+    
+    <option>Show Area 3</option>
+    
+</select>
+
+<hr>
+
+
+</section>
+
+<!-- section 1: Add Customer-->
+<section id="section1" class="section1">
+    
+<br>
+    
+<label>Please Enter a Customer ID: </label>
+
+<input type="text" id="custid">
+    
+<label class="example"> The customer ID should be 5 uppercase text characters.</label>
+
+<br>
+    
+<label>Please enter the Customer Name: </label>
+
+<input type="text" id="custname">
+
+<br>
+    
+<label>Please enter the Customer City: </label>
+
+<input type="text" id="custcity">    
+    
+<br>
+    
+<button onclick="CreateCustomer()" id="newcust">Add a New Customer</button>
+
+<br>
+    
+<hr>
+    
+<br>
+    
+<label id="result">The operation's result will display here.</label>
+   
+    
+</section>
+
+
+
+<!-- section 2: Find Order History -->
+<section id="section2" class="section2">
+    
+<br>
+    
+<label>Please Enter the Order Number: </label>
+
+<input type="number" id="ordernumber">
+
+<br>
+    
+<label>Please enter the Ship-To Name: </label>
+
+<input type="text" id="shipname">
+
+<br>
+    
+<label>Please enter the Ship-To Street Address: </label>
+
+<input type="text" id="shipaddress">    
+
+<br>
+    
+<label>Please enter the Ship-To City: </label>
+
+<input type="text" id="shipcity">
+
+<br>
+    
+<label>Please enter the Ship-To Postal Code: </label>
+
+<input type="text" id="shippostal">
+    
+<br>
+    
+<button onclick="UpdateOrderAddress()" id="orderupdate">Update Order Address</button>
+
+<br>
+    
+<hr>
+    
+<br>
+    
+<label id="result2">The operation's result will display here.</label>
+   
+</section>
+
+
+
+<!-- section 3: List of Orders-->
+<section id="section3" class="section3">
+    
+<br>
+
+<label>Please enter the Customer ID to be deleted: </label>
+
+<input type="number" id="custiddelete">
+    
+<br>
+    
+<button onclick="DeleteCustomer()" id="orderupdate">Delete Customer ID</button>
+
+<br>
+    
+<hr>
+    
+<br>
+    
+<label id="result3">The operation's result will display here.</label>
+   
+</section>
+
+</body>
+</html>
